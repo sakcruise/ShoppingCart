@@ -1,6 +1,6 @@
 package shoppingcart
 
-object cartMain {
+object cartMain extends App {
 
-  println("Total Cost = " + cart.checkout(Array("Apple", "Apple", "Apple", "Orange")))
+  println("Total Cost = " + cart.checkout(args))
 }

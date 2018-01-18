@@ -54,19 +54,15 @@ object cart {
   }
 
   def getTotalCostPerItem(itemOffer: Int, itemPrice: Double, quantity: Int): Double = {
-    
+
     val offerValue = itemOffer match {
       case 1 => buyOneGetOneFree(quantity)
       case 2 => threeForTwo(quantity)
       case _ => 0.00
     }
-
     val total = itemPrice * offerValue
     total
 
   }
-
-
-
  }
 
