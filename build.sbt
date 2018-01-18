@@ -4,6 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.11.12"
 
-// https://mvnrepository.com/artifact/org.scalatest/scalatest
-libraryDependencies += "org.scalatest" % "scalatest_2.10" % "2.1.0" % "test"
+resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.4"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "test"
 
